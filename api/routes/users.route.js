@@ -36,6 +36,7 @@
 const express = require('express');
 const router = express.Router();
 const userController = require('../controllers/users.controller')
+const User = require('../models/users.model')
 
 // Đăng ký người dùng
 router.post('/signup', async (req, res) => {
